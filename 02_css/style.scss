@@ -47,7 +47,7 @@ p {
     container
 --------------------------------------*/
 .container {
-  padding: 0 20px;
+  margin: 0 20px;
   width: 100%;
   margin: 0 auto;
   @include mq(sm) {
@@ -55,11 +55,11 @@ p {
   }
   @include mq(md) {
     max-width: 768px;
-    padding: 0 40px;
+    margin: 0 40px;
   }
   @include mq(lg) {
     max-width: 1024px;
-    padding: 0 60px;
+    margin: 0 60px;
   }
   @include mq(xl) {
     max-width: 1280px;
@@ -277,6 +277,107 @@ p {
       bottom: -80%;
       transform: translate(-50%, 0);
       left: 50%;
+    }
+  }
+}
+
+/*-------------------------------------
+    header
+--------------------------------------*/
+
+.header1 {
+  .header {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
+  .navi {
+    &-list {
+      display: flex;
+      align-items: center;
+      &-item {
+        a {
+          text-decoration: none;
+          color: $black;
+          display: inline-block;
+          padding: 5px 10px;
+          margin: 0 10px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header2 {
+  .header {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      position: relative;
+    }
+  }
+  .navi {
+    margin-left: 60px;
+    &-list {
+      display: flex;
+      align-items: center;
+      &-item {
+        a {
+          text-decoration: none;
+          color: $black;
+          display: inline-block;
+          padding: 20px 10px;
+          margin: 0 10px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.3;
+          }
+          &:hover + .child-navi-list {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        a.parent {
+          position: relative;
+          margin-right: 20px;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            right: -5px;
+            top: calc(50% - 1px);
+            transform: translate(0, -50%) rotate(45deg);
+            box-sizing: border-box;
+            width: 5px;
+            height: 5px;
+            border-right: 1px solid $main;
+            border-bottom: 1px solid $main;
+          }
+        }
+      }
+    }
+  }
+  .child-navi-list {
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    top: 58px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    &:hover {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }
