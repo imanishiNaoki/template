@@ -58,9 +58,6 @@ p {
   left: 0;
   z-index: 9999;
   background-color: #fff;
-  border-bottom: 1px solid #efefef;
-  margin-bottom: -1px;
-  box-sizing: border-box;
 }
 .header-logo img {
   height: 30px;
@@ -136,7 +133,6 @@ p {
   color: #000;
   transition: all 0.3s ease-in-out;
   justify-content: space-between;
-  border: 1px solid #efefef;
   box-sizing: border-box;
 }
 .header .megamenu1-item-link:hover {
@@ -175,10 +171,6 @@ p {
   visibility: visible;
   opacity: 1;
 }
-.header .megamenu2-item {
-  border: 1px solid #efefef;
-  box-sizing: border-box;
-}
 .header .megamenu2-item-link {
   display: block;
   padding: 10px 20px;
@@ -190,7 +182,7 @@ p {
 }
 .header .megamenu2-block {
   width: 100%;
-  padding: 12px 20px;
+  padding: 5px 20px;
 }
 .header .hamburger {
   display: none;

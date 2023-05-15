@@ -71,9 +71,6 @@ p {
   left: 0;
   z-index: 9999;
   background-color: $white;
-  border-bottom: 1px solid #efefef;
-  margin-bottom: -1px;
-  box-sizing: border-box;
   &-logo {
     img {
       height: 30px;
@@ -154,7 +151,6 @@ p {
         color: #000;
         transition: all 0.3s ease-in-out;
         justify-content: space-between;
-        border: 1px solid #efefef;
         box-sizing: border-box;
         &:hover {
           background-color: #f3f3f3;
@@ -195,8 +191,6 @@ p {
       }
     }
     &-item {
-      border: 1px solid #efefef;
-      box-sizing: border-box;
       &-link {
         display: block;
         padding: 10px 20px;
@@ -209,7 +203,7 @@ p {
     }
     &-block {
       width: 100%;
-      padding: 12px 20px;
+      padding: 5px 20px;
     }
   }
   .hamburger {
