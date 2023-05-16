@@ -84,22 +84,28 @@ p {
   }
   .navi {
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    transform: translate(0, -100%);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
     @include mq(lg) {
       display: block;
       position: static;
       height: auto;
-      overflow: visible;
+      transform: translate(0, 0);
+      opacity: 1;
     }
     &-list {
       @include mq(lg) {
         display: flex;
       }
+    }
+    &.is_active {
+      top: 60px;
+      transform: translate(0, 0);
+      opacity: 1;
     }
     &-item {
       &-link {
@@ -120,117 +126,6 @@ p {
           color: $white;
         }
       }
-    }
-  }
-  .megamenu1 {
-    border-radius: 50%/50%;
-    border: 1px solid $black;
-    @include mq(lg) {
-      border: none;
-      width: 20px;
-      height: 20px;
-    }
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-top: 3px;
-    margin-left: 10px;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: '';
-      width: 7px;
-      height: 7px;
-      border-right: #000 solid 2px;
-      border-bottom: #000 solid 2px;
-      box-sizing: border-box;
-      transform: translate(-50%, -50%) rotate(45deg);
-      top: 50%;
-      left: 50%;
-    }
-    &-list {
-      @include mq(lg) {
-        transform: translate(0, 100%);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.2s ease-in-out;
-      width: 100%;
-      background-color: $white;
-      &.is_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-    &-item {
-      &-link {
-        width: 100%;
-        justify-content: center;
-        @include mq(lg) {
-          width: 20%;
-          justify-content: space-between;
-        }
-        display: flex;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #000;
-        transition: all 0.3s ease-in-out;
-        box-sizing: border-box;
-        &:hover {
-          background-color: #f3f3f3;
-        }
-      }
-    }
-  }
-  .megamenu2 {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: '';
-      width: 7px;
-      height: 7px;
-      border-right: #000 solid 2px;
-      border-bottom: #000 solid 2px;
-      box-sizing: border-box;
-      transform: translate(-50%, -50%) rotate(-45deg);
-      top: 50%;
-      left: 50%;
-    }
-    &-list {
-      position: absolute;
-      top: 0;
-      right: 0;
-      visibility: hidden;
-      opacity: 0;
-      width: 80%;
-      transition: all 0.3s ease-in-out;
-      background-color: $white;
-      &.is_active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-    &-item {
-      &-link {
-        display: block;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #000;
-        &:hover {
-          background-color: #f3f3f3;
-        }
-      }
-    }
-    &-block {
-      width: 100%;
-      padding: 5px 20px;
     }
   }
   .hamburger {
