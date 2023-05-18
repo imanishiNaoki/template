@@ -69,11 +69,10 @@ p {
   position: relative;
 }
 .header .navi {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 60px;
   left: 0;
   width: 100%;
-  transform: translate(0, -100%);
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
@@ -86,15 +85,35 @@ p {
     opacity: 1;
   }
 }
+.header .navi-list {
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
 @media screen and (min-width: 1024px) {
   .header .navi-list {
     display: flex;
   }
 }
 .header .navi.is_active {
-  top: 60px;
   transform: translate(0, 0);
   opacity: 1;
+}
+.header .navi-overlay {
+  display: block;
+  z-index: 900;
+  width: 100vw;
+  height: 100vh;
+  background-color: #999999;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+@media screen and (min-width: 1024px) {
+  .header .navi-overlay {
+    position: static;
+    display: none;
+  }
 }
 .header .navi-item-link {
   height: 60px;
@@ -119,6 +138,8 @@ p {
   flex-direction: column;
   padding: 10px;
   margin-right: -10px;
+  position: relative;
+  z-index: 1000;
 }
 @media screen and (min-width: 1024px) {
   .header .hamburger {

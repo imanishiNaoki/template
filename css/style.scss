@@ -83,11 +83,10 @@ p {
     position: relative;
   }
   .navi {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 60px;
     left: 0;
     width: 100%;
-    transform: translate(0, -100%);
     transition: all 0.2s ease-in-out;
     opacity: 0;
     @include mq(lg) {
@@ -98,14 +97,30 @@ p {
       opacity: 1;
     }
     &-list {
+      background-color: $white;
+      position: relative;
+      z-index: 1000;
       @include mq(lg) {
         display: flex;
       }
     }
     &.is_active {
-      top: 60px;
       transform: translate(0, 0);
       opacity: 1;
+    }
+    &-overlay {
+      display: block;
+      z-index: 900;
+      width: 100vw;
+      height: 100vh;
+      background-color: #999999;
+      top: 0;
+      left: 0;
+      position: fixed;
+      @include mq(lg) {
+        position: static;
+        display: none;
+      }
     }
     &-item {
       &-link {
@@ -133,6 +148,8 @@ p {
     flex-direction: column;
     padding: 10px;
     margin-right: -10px;
+    position: relative;
+    z-index: 1000;
     @include mq(lg) {
       display: none;
     }
