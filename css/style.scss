@@ -133,7 +133,7 @@ a {
       display: block;
       z-index: 900;
       width: 100vw;
-      height: 100vh;
+      height: 130vh;
       background-color: $black;
       opacity: 0.5;
       top: 0;
@@ -490,12 +490,12 @@ a {
     Price
 --------------------------------------*/
 .price {
-  background: url('/img/price-01.jpg');
-  background-position: left;
-
+  background-color: $main;
   @include mq(lg) {
-    background-size: cover;
     background-position: center;
+    background: url('/img/price-01.jpg');
+    background-size: cover;
+    background-color: none;
   }
   color: $white;
   .container {
@@ -630,7 +630,18 @@ a {
   }
   &-text {
     margin-top: 20px;
-    color: $white;
+  }
+  .section-title {
+    color: $thema;
+    @include mq(lg) {
+      color: $white;
+    }
+  }
+  .section-text {
+    color: $thema;
+    @include mq(lg) {
+      color: $white;
+    }
   }
 }
 /*-------------------------------------
@@ -807,7 +818,7 @@ a {
       }
     }
   }
-  &-table {
+  &-table-row {
     margin: 60px 0;
     table {
       width: 100%;
@@ -816,16 +827,67 @@ a {
     tr {
       border-bottom: 1px solid $thema;
     }
+    .single-header {
+      text-align: left;
+      font-weight: normal;
+      width: 30%;
+      padding: 30px 0 30px 20px;
+    }
+    .single-data {
+      vertical-align: middle;
+    }
   }
-  &-header {
-    text-align: left;
-    font-weight: normal;
-    width: 30%;
-    padding: 30px 0 30px 20px;
+  &-table-col {
+    width: 100%;
+    margin: 60px 0;
+    @include mq(md) {
+      overflow-x: visible;
+    }
+    white-space: nowrap;
+    overflow-x: scroll;
+    table {
+      width: 100%;
+      height: 100%;
+    }
+    tr {
+      border-bottom: 1px solid #cecece;
+    }
+    thead {
+      @include mq(md) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 60px;
+        left: 0;
+      }
+      th:first-child {
+        text-align: left;
+        background-color: $white;
+        border-top: 1px solid #cecece;
+        border-left: 1px solid #cecece;
+        box-sizing: border-box;
+      }
+      th:not(:first-child) {
+        background-color: $primary;
+        color: $white;
+      }
+      th {
+        padding: 30px 20px;
+      }
+    }
+    .single-header {
+      text-align: left;
+      font-weight: normal;
+      min-width: 200px;
+      padding: 30px 0 30px 20px;
+      background-color: $thema;
+      color: $white;
+    }
+    .single-data {
+      vertical-align: middle;
+      text-align: center;
+    }
   }
-  &-data {
-    vertical-align: middle;
-  }
+
   &-img {
     width: 100%;
     margin-top: 40px;
