@@ -41,23 +41,24 @@ a {
   line-height: 1.7;
   letter-spacing: 1px;
 }
-
+.sp-show {
+  @include mq(md) {
+    display: none;
+  }
+}
 /*-------------------------------------
     container
 --------------------------------------*/
 .container {
-  padding: 0 20px;
   margin: 0 auto;
   @include mq(sm) {
     max-width: 640px;
   }
   @include mq(md) {
     max-width: 768px;
-    padding: 0 40px;
   }
   @include mq(lg) {
     max-width: 1024px;
-    padding: 0 60px;
   }
   @include mq(xl) {
     max-width: 1280px;
@@ -93,6 +94,10 @@ a {
     }
   }
   .container {
+    @include mq(md) {
+      padding: 0 40px;
+    }
+    padding: 0 20px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -464,19 +469,19 @@ a {
       background: url('/img/service-01.jpg');
       background-position: center;
       background-size: cover;
-      padding-top: calc(56.25% / 1.5);
+      padding-top: calc(56.25% / 1.2);
     }
     &.-img02 {
       background: url('/img/service-02.jpg');
       background-position: center;
       background-size: cover;
-      padding-top: calc(56.25% / 1.5);
+      padding-top: calc(56.25% / 1.2);
     }
     &.-img03 {
       background: url('/img/service-03.jpg');
       background-position: center;
       background-size: cover;
-      padding-top: calc(56.25% / 1.5);
+      padding-top: calc(56.25% / 1.2);
     }
   }
   &-text {
@@ -603,7 +608,7 @@ a {
       @include mq(lg) {
         padding-top: 56.25%;
       }
-      padding-top: calc(56.25% / 2);
+      padding-top: calc(56.25% / 1.2);
     }
     &.-img02 {
       background: url('/img/price-03.jpg');
@@ -612,7 +617,7 @@ a {
       @include mq(lg) {
         padding-top: 56.25%;
       }
-      padding-top: calc(56.25% / 2);
+      padding-top: calc(56.25% / 1.2);
     }
     &.-img03 {
       background: url('/img/price-04.jpg');
@@ -621,7 +626,7 @@ a {
       @include mq(lg) {
         padding-top: 56.25%;
       }
-      padding-top: calc(56.25% / 2);
+      padding-top: calc(56.25% / 1.2);
     }
   }
   &-sub {
@@ -840,6 +845,7 @@ a {
   &-table-col {
     width: 100%;
     margin: 60px 0;
+    font-size: rem(12);
     @include mq(md) {
       overflow-x: visible;
     }
@@ -877,14 +883,97 @@ a {
     .single-header {
       text-align: left;
       font-weight: normal;
-      min-width: 200px;
-      padding: 30px 0 30px 20px;
+      width: 160px;
+      padding: 30px 20px;
       background-color: $thema;
       color: $white;
     }
     .single-data {
       vertical-align: middle;
       text-align: center;
+      label {
+        width: 100%;
+        display: inline-block;
+        &:not(:first-child) {
+          margin-top: 20px;
+          @include mq(md) {
+            margin-left: 40px;
+            margin-top: 0;
+          }
+        }
+        input {
+          margin-top: -2px;
+          display: inline-block;
+        }
+      }
+    }
+    form {
+      .single-data {
+        display: block;
+        padding: 16px 0;
+        text-align: left;
+        @include mq(md) {
+          display: table-cell;
+          text-align: left;
+          padding: 0 0 0 40px;
+        }
+        label {
+          @include mq(md) {
+            width: auto;
+          }
+        }
+        input[type='text'],
+        [type='email'] {
+          width: 96%;
+          @include mq(md) {
+            width: 90%;
+          }
+        }
+        textarea {
+          width: 96%;
+          @include mq(md) {
+            width: 90%;
+            margin: 30px 0;
+          }
+          height: 200px;
+        }
+      }
+      .single-header {
+        display: block;
+        width: auto;
+        padding: 16px 20px;
+        @include mq(md) {
+          display: table-cell;
+          width: 220px;
+          vertical-align: middle;
+        }
+        &.attention {
+          position: relative;
+          &::before {
+            content: '必須';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(0, -50%);
+            color: $white;
+            background-color: red;
+            padding: 2px 6px;
+          }
+        }
+      }
+      .single-table-tfoot {
+        text-align: center;
+        tr {
+          border: none;
+          button {
+            padding: 16px 100px;
+            margin-top: 60px;
+            color: $white;
+            background-color: $thema;
+            border-radius: 30px/30px;
+          }
+        }
+      }
     }
   }
 
@@ -945,4 +1034,7 @@ a {
       }
     }
   }
+}
+.thanks .container {
+  height: 40vh;
 }
