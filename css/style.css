@@ -222,7 +222,7 @@ a {
 --------------------------------------*/
 .visual {
   height: 100vh;
-  background: url("/img/hero.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/hero.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -276,7 +276,7 @@ a {
   display: block;
   top: 0;
   left: 0;
-  background: url("/img/about-01.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/about-01.jpg");
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -449,19 +449,19 @@ a {
   margin-top: 40px;
 }
 .service-img.-img01 {
-  background: url("/img/service-01.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-01.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;
 }
 .service-img.-img02 {
-  background: url("/img/service-02.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-02.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;
 }
 .service-img.-img03 {
-  background: url("/img/service-03.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-03.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;
@@ -477,7 +477,7 @@ a {
     Price
 --------------------------------------*/
 .price {
-  background: url("/img/price-01.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/price-01.jpg");
   background-position: left;
   color: #fff;
 }
@@ -590,7 +590,7 @@ a {
   margin-top: 20px;
 }
 .price-img.-img01 {
-  background: url("/img/price-02.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/price-02.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 28.125%;
@@ -601,7 +601,7 @@ a {
   }
 }
 .price-img.-img02 {
-  background: url("/img/price-03.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/price-03.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 28.125%;
@@ -612,7 +612,7 @@ a {
   }
 }
 .price-img.-img03 {
-  background: url("/img/price-04.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/price-04.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 28.125%;

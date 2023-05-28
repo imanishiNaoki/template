@@ -237,7 +237,7 @@ a {
 --------------------------------------*/
 .visual {
   height: 100vh;
-  background: url('/img/hero.jpg');
+  background: url('https://imanishinaoki.github.io/template/img/hero.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -288,7 +288,7 @@ a {
     display: block;
     top: 0;
     left: 0;
-    background: url('/img/about-01.jpg');
+    background: url('https://imanishinaoki.github.io/template/img/about-01.jpg');
     background-position: center;
     background-size: cover;
 
@@ -451,19 +451,19 @@ a {
     width: 100%;
     margin-top: 40px;
     &.-img01 {
-      background: url('/img/service-01.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-01.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img02 {
-      background: url('/img/service-02.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-02.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img03 {
-      background: url('/img/service-03.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-03.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
@@ -480,7 +480,7 @@ a {
     Price
 --------------------------------------*/
 .price {
-  background: url('/img/price-01.jpg');
+  background: url('https://imanishinaoki.github.io/template/img/price-01.jpg');
   background-position: left;
 
   @include mq(lg) {
@@ -587,7 +587,7 @@ a {
     width: 100%;
     margin-top: 20px;
     &.-img01 {
-      background: url('/img/price-02.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/price-02.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
@@ -596,7 +596,7 @@ a {
       padding-top: calc(56.25% / 2);
     }
     &.-img02 {
-      background: url('/img/price-03.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/price-03.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
@@ -605,7 +605,7 @@ a {
       padding-top: calc(56.25% / 2);
     }
     &.-img03 {
-      background: url('/img/price-04.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/price-04.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
