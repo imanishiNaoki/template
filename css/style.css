@@ -508,7 +508,7 @@ a {
 @media screen and (min-width: 1024px) {
   .price {
     background-position: center;
-    background: url("/img/price-01.jpg");
+    background: url("https://imanishinaoki.github.io/template/img/price-01.jpg");
     background-size: cover;
     background-color: none;
   }
@@ -796,7 +796,7 @@ a {
 .single-key {
   height: 200px;
   width: 100%;
-  background: url("/img/hero.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/hero.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1019,19 +1019,19 @@ a {
   margin-top: 40px;
 }
 .single-img.-img01 {
-  background: url("/img/service-01.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-01.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;
 }
 .single-img.-img02 {
-  background: url("/img/service-02.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-02.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;
 }
 .single-img.-img03 {
-  background: url("/img/service-03.jpg");
+  background: url("https://imanishinaoki.github.io/template/img/service-03.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 37.5%;

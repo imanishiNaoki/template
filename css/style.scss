@@ -498,7 +498,7 @@ a {
   background-color: $main;
   @include mq(lg) {
     background-position: center;
-    background: url('/img/price-01.jpg');
+    background: url('https://imanishinaoki.github.io/template/img/price-01.jpg');
     background-size: cover;
     background-color: none;
   }
@@ -769,7 +769,7 @@ a {
   &-key {
     height: 200px;
     width: 100%;
-    background: url('/img/hero.jpg');
+    background: url('https://imanishinaoki.github.io/template/img/hero.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -981,19 +981,19 @@ a {
     width: 100%;
     margin-top: 40px;
     &.-img01 {
-      background: url('/img/service-01.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-01.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img02 {
-      background: url('/img/service-02.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-02.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img03 {
-      background: url('/img/service-03.jpg');
+      background: url('https://imanishinaoki.github.io/template/img/service-03.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
