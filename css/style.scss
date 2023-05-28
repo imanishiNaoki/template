@@ -266,7 +266,12 @@ a {
     height: 100vh;
     background-color: rgba($black, 0.3);
   }
-
+  .container {
+    @include mq(md) {
+      padding: 60px 40px;
+    }
+    padding: 60px 20px;
+  }
   &-catch {
     display: flex;
     flex-direction: column;
@@ -289,7 +294,7 @@ a {
     font-size: rem(20);
     font-weight: bold;
     color: $white;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
   }
 }
 /*-------------------------------------

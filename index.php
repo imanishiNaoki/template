@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ページの内容を表す文章" />
+    <meta property="og:url" content="ページのURL" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:type" content="ページのタイプ" />
+    <meta property="og:description" content="記事の抜粋" />
+    <meta property="og:image" content="画像のURL" />
+    <meta name="twitter:card" content="カード種類" />
+    <meta name="twitter:site" content="@Twitterユーザー名" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="appIDを入力" />
+    <title>テンプレート</title>
+    <link href="/css/reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header">
+        <div class="container">
+          <h1 class="header-logo">
+            <a href="/index.html"> In-Production </a>
+          </h1>
+          <nav>
+            <div class="navi">
+              <div class="navi-overlay"></div>
+              <ul class="navi-list">
+                <li class="navi-item"><a href="/index.html" class="navi-item-link">HOME</a></li>
+                <li class="navi-item"><a href="/about.html" class="navi-item-link">ABOUT</a></li>
+                <li class="navi-item"><a href="/service.html" class="navi-item-link">SERVICE</a></li>
+                <li class="navi-item"><a href="/price.html" class="navi-item-link">PRICE</a></li>
+                <!--                 <li class="navi-item"><a href="/blog.html" class="navi-item-link">BLOG</a></li> -->
+                <li class="navi-item"><a href="/contact.html" class="navi-item-link">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <section class="section" id="visual">
+        <div class="visual">
+          <div class="container">
+            <div class="visual-catch">
+              <h2 class="visual-title">インターネットで<br />世界から、未来に繋ぐ。</h2>
+              <p class="visual-sub">革新的な未来を創造する、イノベーションを提供します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="about">
+          <div class="container">
+            <div class="container-left">
+              <h2 class="section-title">ABOUT</h2>
+              <p class="section-text">わたしたちのミッション</p>
+            </div>
+            <div class="container-right">
+              <div class="about-item">
+                <h3 class="about-sub"><span>次世代の技術を提供</span></h3>
+                <p class="about-text">弊社はWebデザイン・制作・運用を通じて、お客様のビジネスの成長を支援しています。</p>
+                <p class="about-text">高い品質と美しさを追求し、使いやすく親しみやすいWebサイトを提供することで、お客様のビジネスをより魅力的にし、成果を最大化することが私たちの使命です。</p>
+                <p class="about-text">豊富な実績をもとに、緻密な戦略の立案からWebサイトの構築、そして運用・改善まで、ワンストップでサポートしています。</p>
+                <p class="about-text">最新のテクノロジーを駆使し、時代の変化にも柔軟に対応できる体制を整えています。</p>
+                <p class="about-text">お客様の課題に共感し、最高のパフォーマンスを発揮するWebサイトを提供します。</p>
+                <div class="section-anc">
+                  <a href="/about.html">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="service">
+        <div class="service">
+          <div class="container">
+            <div class="container-left">
+              <h2 class="section-title">SERVICE</h2>
+              <p class="section-text">サービス紹介</p>
+            </div>
+            <div class="container-right">
+              <div class="service-item">
+                <h3 class="service-sub"><span>Webサイト制作</span></h3>
+                <div class="service-img -img01"></div>
+                <p class="service-text">デザイン・コーディング・CMS構築・ドメイン・ホスティング等、一般的なWebサイト制作に関する全ての業務を提供しています。</p>
+                <p class="service-text">またスマートフォンやタブレット端末など様々な端末からの閲覧に対応した、レスポンシブな制作も標準でご対応いたします。</p>
+              </div>
+              <div class="service-item">
+                <h3 class="service-sub"><span>開発・運用・保守</span></h3>
+                <div class="service-img -img02"></div>
+                <p class="service-text">Webアプリケーション開発、システム連携に対応するAPI開発、セキュリティ強化対策、サーバ管理・保守など、幅広いプログラミング・開発サービスを提供しています。</p>
+              </div>
+              <div class="service-item">
+                <h3 class="service-sub"><span>SEO対策</span></h3>
+                <div class="service-img -img03"></div>
+                <p class="service-text">検索エンジン最適化（SEO）のサポートを行い、より多くの訪問者を獲得するための対策を実施いたします。</p>
+              </div>
+              <div class="section-anc">
+                <a href="/service.html">詳細を見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="price">
+        <div class="price">
+          <div class="container">
+            <div class="container-top">
+              <h2 class="section-title">PRICE</h2>
+              <p class="section-text">料金プラン</p>
+            </div>
+            <div class="container-bottom">
+              <div class="price-item">
+                <h3 class="price-sub"><span>シンプルプラン</span></h3>
+                <div class="price-img -img01"></div>
+                <p class="price-text">
+                  WordPressの無料テーマを使用してお客様に最適なWEBサイト制作をいたします。<br />
+                  制作ページ数は5ページまでとなります。
+                </p>
+              </div>
+              <div class="price-item">
+                <h3 class="price-sub"><span>スタンダードプラン</span></h3>
+                <div class="price-img -img02"></div>
+                <p class="price-text">
+                  WordPressの有料テーマを使用してよりリッチなWEBサイトをお客様にご提供いたします。
+                  <br />
+                  制作ページ数は10ページまでとなります。
+                </p>
+              </div>
+              <div class="price-item">
+                <h3 class="price-sub"><span>フルオーダープラン</span></h3>
+                <div class="price-img -img03"></div>
+                <p class="price-text">
+                  WordPressをベースにお客さまの要望通りのデザイン、機能を実装したWEBサイトをご提供いたします。
+                  <br />
+                  制作ページ数に基本上限はございません。
+                </p>
+              </div>
+            </div>
+            <div class="section-anc">
+              <a href="/price.html">詳細を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--       <section class="section" id="blog">
+        <div class="blog">
+          <div class="container">
+            <div class="container-top">
+              <h2 class="section-title"><span>BLOG</span></h2>
+              <p class="section-text">社内活動や、WEB制作に関する情報を共有しております。</p>
+            </div>
+            <div class="container-middle">
+              <a href="" class="blog-card">
+                <div class="blog-item">
+                  <div class="blog-img"></div>
+                  <div class="blog-textarea">
+                    <p class="blog-sub">テキストテキスト</p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="blog-card">
+                <div class="blog-item">
+                  <div class="blog-img"></div>
+                  <div class="blog-textarea">
+                    <p class="blog-sub">テキストテキスト</p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="blog-card">
+                <div class="blog-item">
+                  <div class="blog-img"></div>
+                  <div class="blog-textarea">
+                    <p class="blog-sub">テキストテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="container-bottom">
+              <div class="section-anc">
+                <a href="#">投稿一覧</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="section" id="contact">
+        <div class="contact">
+          <div class="container">
+            <div class="container-top">
+              <h2 class="section-title">お問い合わせ</h2>
+            </div>
+            <div class="container-middle">
+              <h3 class="contact-sub">お気軽にご要望をお聞かせください！</h3>
+              <p class="contact-text">ホームページ制作、運用管理、API開発…<br />お客さまの要望にフレキシブルにご対応させて頂きます。</p>
+            </div>
+            <div class="container-bottom">
+              <a href="/contact.html" class="contact-button">お問い合わせはこちらから</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer">
+        <small>&copy;2023 Imanishi Naoki</small>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
