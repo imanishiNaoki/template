@@ -1,3 +1,11 @@
+/*
+Theme Name :	In-production
+Theme URL :	https://github.com/imanishiNaoki/template
+Description :	コーポレートサイト
+Author:	imanishi naoki
+Version :	ver0.0.1
+*/
+
 /*-------------------------------------
     color
 --------------------------------------*/
@@ -252,7 +260,7 @@ a {
 --------------------------------------*/
 .visual {
   height: 100vh;
-  background: url('/img/hero.jpg');
+  background: url('images/hero.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -308,7 +316,7 @@ a {
     display: block;
     top: 0;
     left: 0;
-    background: url('/img/about-01.jpg');
+    background: url('images/about-01.jpg');
     background-position: center;
     background-size: cover;
 
@@ -471,19 +479,19 @@ a {
     width: 100%;
     margin-top: 40px;
     &.-img01 {
-      background: url('/img/service-01.jpg');
+      background: url('images/service-01.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.2);
     }
     &.-img02 {
-      background: url('/img/service-02.jpg');
+      background: url('images/service-02.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.2);
     }
     &.-img03 {
-      background: url('/img/service-03.jpg');
+      background: url('images/service-03.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.2);
@@ -503,7 +511,7 @@ a {
   background-color: $main;
   @include mq(lg) {
     background-position: center;
-    background: url('/img/price-01.jpg');
+    background: url('images/price-01.jpg');
     background-size: cover;
     background-color: none;
   }
@@ -607,7 +615,7 @@ a {
     width: 100%;
     margin-top: 20px;
     &.-img01 {
-      background: url('/img/price-02.jpg');
+      background: url('images/price-02.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
@@ -616,7 +624,7 @@ a {
       padding-top: calc(56.25% / 1.2);
     }
     &.-img02 {
-      background: url('/img/price-03.jpg');
+      background: url('images/price-03.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
@@ -625,7 +633,7 @@ a {
       padding-top: calc(56.25% / 1.2);
     }
     &.-img03 {
-      background: url('/img/price-04.jpg');
+      background: url('images/price-04.jpg');
       background-position: center;
       background-size: cover;
       @include mq(lg) {
@@ -770,11 +778,13 @@ a {
     sigle
 --------------------------------------*/
 .single {
+  .container {
+  }
   margin-top: 60px;
   &-key {
     height: 200px;
     width: 100%;
-    background: url('/img/hero.jpg');
+    background: url('images/hero.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -986,19 +996,19 @@ a {
     width: 100%;
     margin-top: 40px;
     &.-img01 {
-      background: url('/img/service-01.jpg');
+      background: url('images/service-01.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img02 {
-      background: url('/img/service-02.jpg');
+      background: url('images/service-02.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
     }
     &.-img03 {
-      background: url('/img/service-03.jpg');
+      background: url('images/service-03.jpg');
       background-position: center;
       background-size: cover;
       padding-top: calc(56.25% / 1.5);
