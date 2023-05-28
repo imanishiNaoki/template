@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-------------------------------------
     color
 --------------------------------------*/
@@ -18,11 +19,16 @@ a {
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 768px) {
+  .sp-show {
+    display: none;
+  }
+}
+
 /*-------------------------------------
     container
 --------------------------------------*/
 .container {
-  padding: 0 20px;
   margin: 0 auto;
 }
 @media screen and (min-width: 640px) {
@@ -33,18 +39,31 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 40px;
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding: 0 60px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+.single .container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 640px) {
+  .single .container {
+    max-width: 640px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .single .container {
+    max-width: 768px;
+    padding: 0 40px;
   }
 }
 
@@ -66,11 +85,17 @@ a {
   text-decoration: none;
 }
 .header .container {
+  padding: 0 20px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    padding: 0 40px;
+  }
 }
 .header .navi {
   position: fixed;
@@ -111,7 +136,7 @@ a {
   display: block;
   z-index: 900;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   background-color: #000;
   opacity: 0.5;
   top: 0;
@@ -246,7 +271,7 @@ a {
   z-index: 100;
 }
 .visual-title {
-  font-size: 3rem;
+  font-size: 1.875rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 20px;
@@ -452,19 +477,19 @@ a {
   background: url("https://imanishinaoki.github.io/template/img/service-01.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 37.5%;
+  padding-top: 46.875%;
 }
 .service-img.-img02 {
   background: url("https://imanishinaoki.github.io/template/img/service-02.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 37.5%;
+  padding-top: 46.875%;
 }
 .service-img.-img03 {
   background: url("https://imanishinaoki.github.io/template/img/service-03.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 37.5%;
+  padding-top: 46.875%;
 }
 .service-text {
   margin-top: 14px;
@@ -477,14 +502,15 @@ a {
     Price
 --------------------------------------*/
 .price {
-  background: url("https://imanishinaoki.github.io/template/img/price-01.jpg");
-  background-position: left;
+  background-color: #dcd0c0;
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
   .price {
-    background-size: cover;
     background-position: center;
+    background: url("/img/price-01.jpg");
+    background-size: cover;
+    background-color: none;
   }
 }
 .price .container {
@@ -593,7 +619,7 @@ a {
   background: url("https://imanishinaoki.github.io/template/img/price-02.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 28.125%;
+  padding-top: 46.875%;
 }
 @media screen and (min-width: 1024px) {
   .price-img.-img01 {
@@ -604,7 +630,7 @@ a {
   background: url("https://imanishinaoki.github.io/template/img/price-03.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 28.125%;
+  padding-top: 46.875%;
 }
 @media screen and (min-width: 1024px) {
   .price-img.-img02 {
@@ -615,7 +641,7 @@ a {
   background: url("https://imanishinaoki.github.io/template/img/price-04.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 28.125%;
+  padding-top: 46.875%;
 }
 @media screen and (min-width: 1024px) {
   .price-img.-img03 {
@@ -628,7 +654,22 @@ a {
 }
 .price-text {
   margin-top: 20px;
-  color: #fff;
+}
+.price .section-title {
+  color: #373737;
+}
+@media screen and (min-width: 1024px) {
+  .price .section-title {
+    color: #fff;
+  }
+}
+.price .section-text {
+  color: #373737;
+}
+@media screen and (min-width: 1024px) {
+  .price .section-text {
+    color: #fff;
+  }
 }
 
 /*-------------------------------------
@@ -722,7 +763,7 @@ a {
   display: inline-block;
   padding: 20px 60px;
   font-weight: bold;
-  font-size: 1.375rem;
+  font-size: 1rem;
   color: #fff;
   background-color: #373737;
   border-radius: 60px/60px;
@@ -747,5 +788,289 @@ a {
 }
 
 /*-------------------------------------
+    sigle
+--------------------------------------*/
+.single {
+  margin-top: 60px;
+}
+.single-key {
+  height: 200px;
+  width: 100%;
+  background: url("/img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.single-key::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.single .section-title {
+  color: #fff;
+  position: relative;
+  z-index: 50;
+}
+.single-sub {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+.single-text {
+  margin-top: 14px;
+}
+.single-text:nth-of-type(1) {
+  margin-top: 40px;
+}
+.single .container {
+  padding: 60px 20px;
+}
+@media screen and (min-width: 768px) {
+  .single .container {
+    padding: 60px 40px;
+  }
+}
+.single-sub span {
+  position: relative;
+  padding-left: 20px;
+}
+.single-sub span::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 5px;
+  height: 100%;
+}
+.single-table-row {
+  margin: 60px 0;
+}
+.single-table-row table {
+  width: 100%;
+  height: 100%;
+}
+.single-table-row tr {
+  border-bottom: 1px solid #373737;
+}
+.single-table-row .single-header {
+  text-align: left;
+  font-weight: normal;
+  width: 30%;
+  padding: 30px 0 30px 20px;
+}
+.single-table-row .single-data {
+  vertical-align: middle;
+}
+.single-table-col {
+  width: 100%;
+  margin: 60px 0;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col {
+    overflow-x: visible;
+  }
+}
+.single-table-col table {
+  width: 100%;
+  height: 100%;
+}
+.single-table-col tr {
+  border-bottom: 1px solid #cecece;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    left: 0;
+  }
+}
+.single-table-col thead th:first-child {
+  text-align: left;
+  background-color: #fff;
+  border-top: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  box-sizing: border-box;
+}
+.single-table-col thead th:not(:first-child) {
+  background-color: #c0b283;
+  color: #fff;
+}
+.single-table-col thead th {
+  padding: 30px 20px;
+}
+.single-table-col .single-header {
+  text-align: left;
+  font-weight: normal;
+  width: 160px;
+  padding: 30px 20px;
+  background-color: #373737;
+  color: #fff;
+}
+.single-table-col .single-data {
+  vertical-align: middle;
+  text-align: center;
+}
+.single-table-col .single-data label {
+  width: 100%;
+  display: inline-block;
+}
+.single-table-col .single-data label:not(:first-child) {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col .single-data label:not(:first-child) {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+}
+.single-table-col .single-data label input {
+  margin-top: -2px;
+  display: inline-block;
+}
+.single-table-col form .single-data {
+  display: block;
+  padding: 16px 0;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col form .single-data {
+    display: table-cell;
+    text-align: left;
+    padding: 0 0 0 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .single-table-col form .single-data label {
+    width: auto;
+  }
+}
+.single-table-col form .single-data input[type=text],
+.single-table-col form .single-data [type=email] {
+  width: 96%;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col form .single-data input[type=text],
+.single-table-col form .single-data [type=email] {
+    width: 90%;
+  }
+}
+.single-table-col form .single-data textarea {
+  width: 96%;
+  height: 200px;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col form .single-data textarea {
+    width: 90%;
+    margin: 30px 0;
+  }
+}
+.single-table-col form .single-header {
+  display: block;
+  width: auto;
+  padding: 16px 20px;
+}
+@media screen and (min-width: 768px) {
+  .single-table-col form .single-header {
+    display: table-cell;
+    width: 220px;
+    vertical-align: middle;
+  }
+}
+.single-table-col form .single-header.attention {
+  position: relative;
+}
+.single-table-col form .single-header.attention::before {
+  content: "必須";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  color: #fff;
+  background-color: red;
+  padding: 2px 6px;
+}
+.single-table-col form .single-table-tfoot {
+  text-align: center;
+}
+.single-table-col form .single-table-tfoot tr {
+  border: none;
+}
+.single-table-col form .single-table-tfoot tr button {
+  padding: 16px 100px;
+  margin-top: 60px;
+  color: #fff;
+  background-color: #373737;
+  border-radius: 30px/30px;
+}
+.single-img {
+  width: 100%;
+  margin-top: 40px;
+}
+.single-img.-img01 {
+  background: url("/img/service-01.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 37.5%;
+}
+.single-img.-img02 {
+  background: url("/img/service-02.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 37.5%;
+}
+.single-img.-img03 {
+  background: url("/img/service-03.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 37.5%;
+}
+.single-item {
+  margin-top: 100px;
+}
+.single-item:first-child {
+  margin-top: 0;
+}
+.single-contact {
+  margin: 100px 0;
+  text-align: center;
+}
+.single-contact-sub {
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+.single-contact-text {
+  margin-top: 20px;
+}
+.single-contact-button {
+  margin-top: 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 60px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #373737;
+  border-radius: 60px/60px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.single-contact-button:hover {
+  filter: brightness(1.9);
+}
 
---------------------------------------*//*# sourceMappingURL=style.css.map */
+.thanks .container {
+  height: 40vh;
+}/*# sourceMappingURL=style.css.map */
