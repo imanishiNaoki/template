@@ -88,6 +88,7 @@
     }
   }
   let fadeTarget = document.querySelectorAll('.js-fadeIn');
+  let fadeTarget3 = document.querySelectorAll('.js-fadeIn2');
   let fadeTarget1 = document.querySelectorAll('.js-fadeInDefault');
   let fadeTarget2 = document.querySelectorAll('.js-fadeInDefault2');
   /*
@@ -98,9 +99,11 @@
 
 */
   let hoge = new FadeIn(fadeTarget, 1, '60');
+  let hoge3 = new FadeIn(fadeTarget3, 1, '60');
   let hoge1 = new FadeInDefault(fadeTarget1, 1.5, '60');
-  let hoge2 = new FadeInDefault(fadeTarget2, 1.5, '60');
+  let hoge2 = new FadeInDefault(fadeTarget2, 1.5, '20');
   hoge.main();
   hoge1.main();
   hoge2.main();
+  hoge3.main();
 })();

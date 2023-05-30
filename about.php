@@ -2,12 +2,12 @@
 /**　　　　　　　　　　　　　　　　　
  * Template Name: about
  */get_header(); ?>
-<main id="main" class="single">
+<main id="main" class="single js-fadeInContainer">
     <section class="section" id="single">
         <div class="single-key">
             <h2 class="section-title"><span>ABOUT</span></h2>
         </div>
-        <div class="container">
+        <div class="container js-fadeInDefault">
             <div class="single-item">
                 <h3 class="single-sub"><span>次世代の技術を提供</span></h3>
                 <p class="single-text">弊社はWebデザイン・制作・運用を通じて、お客様のビジネスの成長を支援しています。</p>

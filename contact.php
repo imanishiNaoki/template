@@ -2,12 +2,12 @@
 /**　　　　　　　　　　　　　　　　　
  * Template Name: contact
  */get_header(); ?>
-<main id="main" class="single">
+<main id="main" class="single js-fadeInContainer">
     <section class="section" id="single">
         <div class="single-key">
             <h2 class="section-title"><span>CONTACT</span></h2>
         </div>
-        <div class="container">
+        <div class="container js-fadeInDefault">
             <h3 class="single-sub"><span>お問い合せフォーム</span></h3>
             <p class="single-text">お客さまの要望にフレキシブルにご対応させて頂きます。</p>
 

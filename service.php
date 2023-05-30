@@ -2,12 +2,12 @@
 /**　　　　　　　　　　　　　　　　　
  * Template Name: service
  */get_header(); ?>
-<main id="main" class="single">
+<main id="main" class="single js-fadeInContainer">
     <section class="section" id="single">
         <div class="single-key">
             <h2 class="section-title"><span>SERVICE</span></h2>
         </div>
-        <div class="container">
+        <div class="container js-fadeInDefault">
             <div class="single-item">
                 <div class="single-item">
                     <h3 class="single-sub"><span>Webサイト制作</span></h3>
@@ -30,7 +30,8 @@
             <div class="single-contact">
                 <h3 class="single-contact-sub">お気軽にご要望をお聞かせください！</h3>
                 <p class="single-contact-text">ホームページ制作、運用管理、API開発…<br />お客さまの要望にフレキシブルにご対応させて頂きます。</p>
-                <a href="/contact.html" class="single-contact-button">お問い合わせはこちらから</a>
+                <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
+                    class="single-contact-button">お問い合わせはこちらから</a>
             </div>
         </div>
     </section>

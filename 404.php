@@ -4,12 +4,12 @@
  */
 ?>
 <?php get_header(); ?>
-<main id="main" class="single thanks">
+<main id="main" class="single thanks js-fadeInContainer">
     <section class="section" id="single">
         <div class="single-key">
             <h2 class="section-title"><span>404エラー</span></h2>
         </div>
-        <div class="container">
+        <div class="container js-fadeInDefault">
             <h3 class="single-sub">
                 <span>ページが存在しません</span>
             </h3>

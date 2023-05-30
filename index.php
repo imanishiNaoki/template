@@ -27,7 +27,7 @@
                         <p class="about-text">最新のテクノロジーを駆使し、時代の変化にも柔軟に対応できる体制を整えています。</p>
                         <p class="about-text">お客様の課題に共感し、最高のパフォーマンスを発揮するWebサイトを提供します。</p>
                         <div class="section-anc">
-                            <a href="/about.html">詳細を見る</a>
+                            <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">詳細を見る</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <p class="service-text">検索エンジン最適化（SEO）のサポートを行い、より多くの訪問者を獲得するための対策を実施いたします。</p>
                     </div>
                     <div class="section-anc">
-                        <a href="/service.html">詳細を見る</a>
+                        <a href="<?php echo esc_url( home_url( '/service/' ) ); ?>">詳細を見る</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <p class="section-text">料金プラン</p>
                 </div>
                 <div class="container-bottom">
-                    <div class="price-item js-fadeIn">
+                    <div class="price-item js-fadeIn2">
                         <h3 class="price-sub"><span>シンプルプラン</span></h3>
                         <div class="price-img -img01"></div>
                         <p class="price-text">
@@ -82,7 +82,7 @@
                             制作ページ数は5ページまでとなります。
                         </p>
                     </div>
-                    <div class="price-item js-fadeIn">
+                    <div class="price-item js-fadeIn2">
                         <h3 class="price-sub"><span>スタンダードプラン</span></h3>
                         <div class="price-img -img02"></div>
                         <p class="price-text">
@@ -91,7 +91,7 @@
                             制作ページ数は10ページまでとなります。
                         </p>
                     </div>
-                    <div class="price-item js-fadeIn">
+                    <div class="price-item js-fadeIn2">
                         <h3 class="price-sub"><span>フルオーダープラン</span></h3>
                         <div class="price-img -img03"></div>
                         <p class="price-text">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="section-anc">
-                    <a href="/price.html">詳細を見る</a>
+                    <a href="<?php echo esc_url( home_url( '/price/' ) ); ?>">詳細を見る</a>
                 </div>
             </div>
         </div>
@@ -159,7 +159,7 @@
                     <p class="contact-text">ホームページ制作、運用管理、API開発…<br />お客さまの要望にフレキシブルにご対応させて頂きます。</p>
                 </div>
                 <div class="container-bottom">
-                    <a href="/contact.html" class="contact-button">お問い合わせはこちらから</a>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="contact-button">お問い合わせはこちらから</a>
                 </div>
             </div>
         </div>
