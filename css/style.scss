@@ -808,7 +808,10 @@ a {
     z-index: 50;
   }
   &-sub {
-    font-size: rem(30);
+    @include mq(md) {
+      font-size: rem(30);
+    }
+    font-size: rem(22);
     font-weight: bold;
   }
   &-text {
@@ -860,7 +863,6 @@ a {
   &-table-col {
     width: 100%;
     margin: 60px 0;
-    font-size: rem(12);
     @include mq(md) {
       overflow-x: visible;
     }
@@ -898,7 +900,7 @@ a {
     .single-header {
       text-align: left;
       font-weight: normal;
-      width: 160px;
+      width: 190px;
       padding: 30px 20px;
       background-color: $thema;
       color: $white;
@@ -927,10 +929,12 @@ a {
         display: block;
         padding: 16px 0;
         text-align: left;
+        margin: 0 0 40px 0;
         @include mq(md) {
           display: table-cell;
           text-align: left;
           padding: 0 0 0 40px;
+          margin: 0;
         }
         label {
           @include mq(md) {
@@ -957,9 +961,10 @@ a {
         display: block;
         width: auto;
         padding: 16px 20px;
+        font-size: rem(12);
         @include mq(md) {
           display: table-cell;
-          width: 220px;
+          min-width: 140px;
           vertical-align: middle;
         }
         &.attention {
@@ -1037,12 +1042,12 @@ a {
       display: inline-block;
       padding: 20px 60px;
       font-weight: bold;
-      font-size: rem(16);
       color: $white;
       background-color: $thema;
       border-radius: 60px/60px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
+      font-size: rem(26);
       &:hover {
         -webkit-filter: brightness(1.9);
         filter: brightness(1.9);
@@ -1052,4 +1057,19 @@ a {
 }
 .thanks .container {
   height: 40vh;
+}
+.js-fadeInContainer {
+  overflow: hidden;
+}
+.js-fadeIn {
+  opacity: 0;
+  transform: translateX(50%);
+}
+.js-fadeInDefault {
+  opacity: 0;
+  transform: translateX(20%);
+}
+.js-fadeInDefault2 {
+  opacity: 0;
+  transform: translateY(100%);
 }

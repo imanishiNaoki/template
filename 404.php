@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <h3 class="single-sub">
-                <span>ご指定のページが存在しません。</span>
+                <span>ページが存在しません</span>
             </h3>
             <p class="single-text">大変申し訳ございませんが、ヘッダーより目的のページに移動してください。</p>
         </div>
