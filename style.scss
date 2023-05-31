@@ -432,9 +432,9 @@ a {
     &-right {
       @include mq(md) {
         width: 60%;
-        overflow: hidden;
       }
 
+      overflow: hidden;
       color: $white;
     }
   }
@@ -944,6 +944,7 @@ a {
         input[type='text'],
         [type='email'] {
           width: 96%;
+          font-size: rem(16);
           @include mq(md) {
             width: 90%;
           }
@@ -961,11 +962,12 @@ a {
         display: block;
         width: auto;
         padding: 16px 20px;
-        font-size: rem(12);
+        font-size: rem(16);
         @include mq(md) {
           display: table-cell;
           min-width: 140px;
           vertical-align: middle;
+          font-size: rem(12);
         }
         &.attention {
           position: relative;
@@ -985,12 +987,13 @@ a {
         text-align: center;
         tr {
           border: none;
-          button {
+          input[type='button'] {
             padding: 16px 100px;
             margin-top: 60px;
             color: $white;
             background-color: $thema;
             border-radius: 30px/30px;
+            font-size: rem(18);
           }
         }
       }
@@ -1047,7 +1050,6 @@ a {
       border-radius: 60px/60px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-      font-size: rem(26);
       &:hover {
         -webkit-filter: brightness(1.9);
         filter: brightness(1.9);

@@ -438,12 +438,12 @@ a {
   }
 }
 .service .container-right {
+  overflow: hidden;
   color: #fff;
 }
 @media screen and (min-width: 768px) {
   .service .container-right {
     width: 60%;
-    overflow: hidden;
   }
 }
 .service-sub span {
@@ -980,6 +980,7 @@ a {
 .single-table-col form .single-data input[type=text],
 .single-table-col form .single-data [type=email] {
   width: 96%;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .single-table-col form .single-data input[type=text],
@@ -1001,13 +1002,14 @@ a {
   display: block;
   width: auto;
   padding: 16px 20px;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .single-table-col form .single-header {
     display: table-cell;
     min-width: 140px;
     vertical-align: middle;
+    font-size: 0.75rem;
   }
 }
 .single-table-col form .single-header.attention {
@@ -1029,12 +1031,13 @@ a {
 .single-table-col form .single-table-tfoot tr {
   border: none;
 }
-.single-table-col form .single-table-tfoot tr button {
+.single-table-col form .single-table-tfoot tr input[type=button] {
   padding: 16px 100px;
   margin-top: 60px;
   color: #fff;
   background-color: #373737;
   border-radius: 30px/30px;
+  font-size: 1.125rem;
 }
 .single-img {
   width: 100%;
@@ -1087,7 +1090,6 @@ a {
   border-radius: 60px/60px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  font-size: 1.625rem;
 }
 .single-contact-button:hover {
   filter: brightness(1.9);

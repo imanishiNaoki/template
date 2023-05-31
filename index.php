@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="main" class="main js-fadeInContainer">
+<main id="main" class="main">
     <section class="section" id="visual">
         <div class="visual">
             <div class="container">
@@ -11,7 +11,7 @@
         </div>
     </section>
     <section class="section" id="about">
-        <div class="about">
+        <div class="about js-fadeInContainer">
             <div class="container">
                 <div class="container-left">
                     <h2 class="section-title">ABOUT</h2>
@@ -67,7 +67,7 @@
         </div>
     </section>
     <section class="section" id="price">
-        <div class="price">
+        <div class="price js-fadeInContainer">
             <div class="container">
                 <div class="container-top">
                     <h2 class="section-title">PRICE</h2>

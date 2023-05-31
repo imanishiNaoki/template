@@ -5,18 +5,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ページの内容を表す文章" />
-    <meta property="og:url" content="ページのURL" />
-    <meta property="og:title" content="ページのタイトル" />
-    <meta property="og:type" content="ページのタイプ" />
-    <meta property="og:description" content="記事の抜粋" />
-    <meta property="og:image" content="画像のURL" />
-    <meta name="twitter:card" content="カード種類" />
-    <meta name="twitter:site" content="@Twitterユーザー名" />
-    <meta property="og:site_name" content="サイト名" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta property="fb:app_id" content="appIDを入力" />
-    <title>テンプレート</title>
+    <?php if( is_home( "/" ) ){ ?>
+    <title>埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="革新的な未来を創造する、イノベーションを提供します。" />
+    <meta property="og:url" content="https://in53-production.com/" />
+    <meta property="og:title" content="埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="革新的な未来を創造する、イノベーションを提供します。" />
+    <?php }?>
+    <?php if( is_page( "about" ) ){ ?>
+    <title>会社概要 | 埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="弊社はWebデザイン・制作・運用を通じて、お客様のビジネスの成長を支援しています。" />
+    <meta property="og:url" content="https://in53-production.com/about/" />
+    <meta property="og:title" content="会社概要 | 埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="弊社はWebデザイン・制作・運用を通じて、お客様のビジネスの成長を支援しています。" />
+    <?php }?>
+    <?php if( is_page( "service" ) ){ ?>
+    <title>サービス | 埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="デザイン・コーディング・CMS構築・ドメイン・ホスティング等、一般的なWebサイト制作に関する全ての業務を提供しています。" />
+    <meta property="og:url" content="https://in53-production.com/service/" />
+    <meta property="og:title" content="サービス | 埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="デザイン・コーディング・CMS構築・ドメイン・ホスティング等、一般的なWebサイト制作に関する全ての業務を提供しています。" />
+    <?php }?>
+    <?php if( is_page( "price" ) ){ ?>
+    <title>料金プラン | 埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="お客様が弊社にご依頼の際にはシンプルプラン、スタンダードプラン、フルオーダープランから選んでいただきます。" />
+    <meta property="og:url" content="https://in53-production.com/price/" />
+    <meta property="og:title" content="料金プラン | 埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="お客様が弊社にご依頼の際にはシンプルプラン、スタンダードプラン、フルオーダープランから選んでいただきます。" />
+    <?php }?>
+    <?php if( is_page( "contact" ) ){ ?>
+    <title>お問い合わせ | 埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="お客さまの要望にフレキシブルにご対応させて頂きます。" />
+    <meta property="og:url" content="https://in53-production.com/contact/" />
+    <meta property="og:title" content="お問い合せ | 埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="お客さまの要望にフレキシブルにご対応させて頂きます。" />
+    <?php }?>
+    <?php if( is_page( "thanks" ) ){ ?>
+    <title>お問合せを受け付けました | 埼玉県のWEB制作会社 | In-Production</title>
+    <meta name="description" content="お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。" />
+    <meta property="og:url" content="https://in53-production.com/about/" />
+    <meta property="og:title" content="お問合せを受け付けました | 埼玉県のWEB制作会社 | In-Production" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。" />
+    <?php }?>
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,4 +1,3 @@
-//megamenu1階層目
 (() => {
   //
   const trigger = document.querySelectorAll('.hamburger');
@@ -34,7 +33,7 @@
     targetFadeSetting() {
       let transition;
       if (this.fadeTime) {
-        transition = `transition:all ease-in-out ${this.fadeTime}s;`;
+        transition = `transition:all ease-in-out ${this.fadeTime}s; 0s`;
       } else {
         transition = '';
       }
@@ -73,7 +72,7 @@
     targetFadeSetting() {
       let transition;
       if (this.fadeTime) {
-        transition = `transition:all ease-in-out ${this.fadeTime}s;`;
+        transition = `transition:all ease-in-out ${this.fadeTime}s; 0s`;
       } else {
         transition = '';
       }

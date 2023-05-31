@@ -59,7 +59,7 @@
                         <tfoot class="single-table-tfoot">
                             <tr>
                                 <td colspan="2">
-                                    <button>送信</button>
+                                    <input type="button" value="送信する" />
                                 </td>
                             </tr>
                         </tfoot>
