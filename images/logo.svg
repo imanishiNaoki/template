@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="199" height="50" viewBox="0 0 199 50">
-  <g id="グループ_1" data-name="グループ 1" transform="translate(-135 -149)">
-    <rect id="長方形_1" data-name="長方形 1" width="155" height="5" transform="translate(179 184)" fill="#b2c6f4"/>
-    <rect id="長方形_2" data-name="長方形 2" width="113" height="5" transform="translate(221 176)" fill="#e0e9ff"/>
-    <path id="パス_1" data-name="パス 1" d="M0,0H199V5H0Z" transform="translate(135 192)" fill="#91a0e2"/>
-    <text id="_Production" data-name="    Production" transform="translate(142 186)" fill="#101010" font-size="40" font-family="MicrosoftSansSerif, Microsoft Sans Serif"><tspan x="0" y="0" xml:space="preserve">    </tspan><tspan y="0" font-size="30">Production</tspan></text>
-    <text id="IN" transform="translate(135 190)" fill="#101010" font-size="44" font-family="MicrosoftSansSerif, Microsoft Sans Serif"><tspan x="0" y="0">IN</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="52" viewBox="0 0 111 52">
+  <g id="グループ_3" data-name="グループ 3" transform="translate(-29 -58)">
+    <text id="omicomi" transform="translate(65 89)" fill="#c0b283" font-size="18" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN"><tspan x="0" y="0">omicomi</tspan></text>
+    <text id="ecure" transform="translate(65 104)" fill="#fff" font-size="18" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN"><tspan x="0" y="0">ecure</tspan></text>
+    <g id="グループ_2" data-name="グループ 2">
+      <g id="グループ_1" data-name="グループ 1">
+        <text id="C" transform="translate(29 98)" fill="#c0b283" font-size="45" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN"><tspan x="0" y="0">C</tspan></text>
+        <text id="S" transform="translate(41 106)" fill="#fff" font-size="34" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN"><tspan x="0" y="0">S</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>

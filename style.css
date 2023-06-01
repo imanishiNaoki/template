@@ -86,10 +86,17 @@ a {
   color: #fff;
   background-color: #373737;
 }
+.header-logo {
+  margin-bottom: -4px;
+}
+.header-logo img {
+  height: 40px;
+}
 .header-logo a {
   color: #fff;
   font-size: 1.25rem;
   text-decoration: none;
+  line-height: normal;
 }
 .header .container {
   padding: 0 20px;

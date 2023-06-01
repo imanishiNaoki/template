@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="In-Production" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.svg" type="image/svg+xml">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og-img.jpg" />
     <?php if( is_home( "/" ) ){ ?>
     <title>埼玉県のWEB制作会社 | In-Production</title>
     <meta name="description" content="革新的な未来を創造する、イノベーションを提供します。" />
@@ -68,7 +71,7 @@
     <?php if( is_page( "thanks" ) ){ ?>
     <title>お問合せを受け付けました | 埼玉県のWEB制作会社 | In-Production</title>
     <meta name="description" content="お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。" />
-    <meta property="og:url" content="https://in53-production.com/about/" />
+    <meta property="og:url" content="https://in53-production.com/thanks/" />
     <meta property="og:title" content="お問合せを受け付けました | 埼玉県のWEB制作会社 | In-Production" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。" />
@@ -90,7 +93,8 @@
         <div class="header">
             <div class="container">
                 <h1 class="header-logo">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"> In-Production </a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""></a>
                 </h1>
                 <nav>
                     <div class="navi">

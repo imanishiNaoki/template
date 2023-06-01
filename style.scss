@@ -95,10 +95,15 @@ a {
   color: $white;
   background-color: $thema;
   &-logo {
+    margin-bottom: -4px;
+    img {
+      height: 40px;
+    }
     a {
       color: $white;
       font-size: rem(20);
       text-decoration: none;
+      line-height: normal;
     }
   }
   .container {
