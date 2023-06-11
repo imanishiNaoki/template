@@ -137,14 +137,14 @@
           method: 'POST',
           body: formData,
         });
-        location.href = '/wordpress/thanks';
+        location.href = '/thanks';
       }
       flag = 0;
     });
   }
-  if (location.href.indexOf('/wordpress/thanks') > 0) {
+  if (location.href.indexOf('/thanks') > 0) {
     setTimeout(() => {
-      location.href = '/wordpress/';
+      location.href = '/';
     }, 5000);
   }
 })();
