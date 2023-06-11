@@ -105,4 +105,46 @@
   hoge1.main();
   hoge2.main();
   hoge3.main();
+
+  //form処理 validation.php
+  const tableError = document.querySelectorAll('.single-table-error td');
+  const form = document.querySelector('#single-form');
+  if (form !== null) {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch('/validation.php', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+      let flag = 0;
+      for (let i = 0; i < Object.keys(data).length; i++) {
+        if (Object.values(data)[i] != 1) {
+          if (!Object.values(data)[i]) {
+            tableError[i].innerHTML = '入力内容に不備があります';
+            flag++;
+          } else {
+            tableError[i].innerHTML = '&nbsp;';
+          }
+        }
+      }
+
+      if (!flag) {
+        const formData = new FormData(form);
+        const response = await fetch('/post.php', {
+          method: 'POST',
+          body: formData,
+        });
+        location.href = '/wordpress/thanks';
+      }
+      flag = 0;
+    });
+  }
+  if (location.href.indexOf('/wordpress/thanks') > 0) {
+    setTimeout(() => {
+      location.href = '/wordpress/';
+    }, 5000);
+  }
 })();

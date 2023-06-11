@@ -42,7 +42,6 @@ $breakpoints: (
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
-
 p,
 a {
   font-size: rem(16);
@@ -783,7 +782,12 @@ a {
     sigle
 --------------------------------------*/
 .single {
-  .container {
+  &-table-error {
+    text-align: right;
+    td {
+      padding: 20px;
+      color: red;
+    }
   }
   margin-top: 60px;
   &-key {
@@ -916,6 +920,7 @@ a {
       label {
         width: 100%;
         display: inline-block;
+        cursor: pointer;
         &:not(:first-child) {
           margin-top: 20px;
           @include mq(md) {
@@ -934,17 +939,20 @@ a {
         display: block;
         padding: 16px 0;
         text-align: left;
-        margin: 0 0 40px 0;
         @include mq(md) {
           display: table-cell;
           text-align: left;
-          padding: 0 0 0 40px;
+          padding: 20px 40px;
           margin: 0;
         }
         label {
+          cursor: pointer;
           @include mq(md) {
             width: auto;
           }
+        }
+        input[type='radio'] {
+          cursor: pointer;
         }
         input[type='text'],
         [type='email'] {
@@ -958,7 +966,6 @@ a {
           width: 96%;
           @include mq(md) {
             width: 90%;
-            margin: 30px 0;
           }
           height: 200px;
         }
@@ -988,6 +995,9 @@ a {
           }
         }
       }
+      .single-table-item {
+        border-bottom: none;
+      }
       .single-table-tfoot {
         text-align: center;
         tr {
@@ -999,6 +1009,15 @@ a {
             background-color: $thema;
             border-radius: 30px/30px;
             font-size: rem(18);
+          }
+          input[type='submit'] {
+            padding: 16px 100px;
+            margin-top: 60px;
+            color: $white;
+            background-color: $thema;
+            border-radius: 30px/30px;
+            font-size: rem(18);
+            cursor: pointer;
           }
         }
       }

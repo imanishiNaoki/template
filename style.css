@@ -815,6 +815,13 @@ a {
 .single {
   margin-top: 60px;
 }
+.single-table-error {
+  text-align: right;
+}
+.single-table-error td {
+  padding: 20px;
+  color: red;
+}
 .single-key {
   height: 200px;
   width: 100%;
@@ -951,6 +958,7 @@ a {
 .single-table-col .single-data label {
   width: 100%;
   display: inline-block;
+  cursor: pointer;
 }
 .single-table-col .single-data label:not(:first-child) {
   margin-top: 20px;
@@ -969,20 +977,25 @@ a {
   display: block;
   padding: 16px 0;
   text-align: left;
-  margin: 0 0 40px 0;
 }
 @media screen and (min-width: 768px) {
   .single-table-col form .single-data {
     display: table-cell;
     text-align: left;
-    padding: 0 0 0 40px;
+    padding: 20px 40px;
     margin: 0;
   }
+}
+.single-table-col form .single-data label {
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .single-table-col form .single-data label {
     width: auto;
   }
+}
+.single-table-col form .single-data input[type=radio] {
+  cursor: pointer;
 }
 .single-table-col form .single-data input[type=text],
 .single-table-col form .single-data [type=email] {
@@ -1002,7 +1015,6 @@ a {
 @media screen and (min-width: 768px) {
   .single-table-col form .single-data textarea {
     width: 90%;
-    margin: 30px 0;
   }
 }
 .single-table-col form .single-header {
@@ -1032,6 +1044,9 @@ a {
   background-color: red;
   padding: 2px 6px;
 }
+.single-table-col form .single-table-item {
+  border-bottom: none;
+}
 .single-table-col form .single-table-tfoot {
   text-align: center;
 }
@@ -1045,6 +1060,15 @@ a {
   background-color: #373737;
   border-radius: 30px/30px;
   font-size: 1.125rem;
+}
+.single-table-col form .single-table-tfoot tr input[type=submit] {
+  padding: 16px 100px;
+  margin-top: 60px;
+  color: #fff;
+  background-color: #373737;
+  border-radius: 30px/30px;
+  font-size: 1.125rem;
+  cursor: pointer;
 }
 .single-img {
   width: 100%;
