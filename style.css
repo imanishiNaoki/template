@@ -999,7 +999,7 @@ a {
 }
 .single-table-col form .single-data input[type=text],
 .single-table-col form .single-data [type=email] {
-  width: 96%;
+  width: 94%;
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -1009,7 +1009,8 @@ a {
   }
 }
 .single-table-col form .single-data textarea {
-  width: 96%;
+  width: 94%;
+  font-size: 1rem;
   height: 200px;
 }
 @media screen and (min-width: 768px) {

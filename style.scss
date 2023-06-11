@@ -956,14 +956,15 @@ a {
         }
         input[type='text'],
         [type='email'] {
-          width: 96%;
+          width: 94%;
           font-size: rem(16);
           @include mq(md) {
             width: 90%;
           }
         }
         textarea {
-          width: 96%;
+          width: 94%;
+          font-size: rem(16);
           @include mq(md) {
             width: 90%;
           }

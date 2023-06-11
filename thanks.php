@@ -9,7 +9,7 @@
         </div>
         <div class="container js-fadeInDefault">
             <h3 class="single-sub">
-                <span>ご連絡いただきありがとうございます。</span>
+                <span>問い合わせを受け付けました</span>
             </h3>
             <p class="single-text">このたびは、In-Productionへお問い合わせ頂き誠にありがとうございます。
                 <br />お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。
